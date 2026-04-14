@@ -106,7 +106,7 @@ export const en: Translations = {
     categories: [
       {
         name: '🛏️ Bedroom',
-        items: ['Single beds × 3', 'Futons × 4 (up to 7 guests)', 'Pillows & blankets included'],
+        items: ['Single beds × 3', 'Futons × 4 (up to 7 guests)', 'Pillows included'],
       },
       {
         name: '🍳 Kitchen',
@@ -134,7 +134,7 @@ export const en: Translations = {
   family: {
     tag: 'Family',
     title: 'Safe & Comfortable\nfor Little Ones',
-    desc: "We've carefully equipped Jikka Japan with families in mind. From baby gates to corner guards, your children's safety is our priority. Whether you have a newborn or school-age kids, everyone can relax and have fun.",
+    desc: "We've carefully equipped Jikka Japan with families in mind. From baby gates to corner guards, your children's safety is our priority. Whether you have a newborn or school-age kids, everyone can relax and have fun. If you need any additional child-friendly items, please let us know in advance.",
     items: [
       {
         icon: '🚧',
@@ -312,7 +312,7 @@ export const en: Translations = {
     },
     selfCheckin: {
       title: 'Self Check-in',
-      desc: 'After booking confirmation, we\'ll send you detailed check-in instructions (key box location, PIN, etc.) by email. No need to wait for staff — check in smoothly on your own schedule.',
+      desc: 'Check-in instructions will be sent via email or through the booking platform.',
     },
     rules: {
       title: 'House Rules',
@@ -323,7 +323,7 @@ export const en: Translations = {
         { icon: '🎉', text: 'No parties or loud music' },
         { icon: '🗑️', text: 'Please sort garbage as instructed' },
         { icon: '🔑', text: 'Return key to key box upon check-out' },
-        { icon: '💨', text: 'Please ventilate and lock up before leaving' },
+        { icon: '🔒', text: 'Please lock up before leaving' },
       ],
     },
   },
