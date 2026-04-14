@@ -613,4 +613,16 @@ export const ja = {
   },
 } as const
 
-export type Translations = typeof ja
+type DeepString<T> = {
+  [K in keyof T]: T[K] extends string
+    ? string
+    : T[K] extends readonly (infer U)[]
+    ? U extends string
+      ? string[]
+      : DeepString<U>[]
+    : T[K] extends object
+    ? DeepString<T[K]>
+    : T[K]
+}
+
+export type Translations = DeepString<typeof ja>
