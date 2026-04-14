@@ -1,0 +1,4 @@
+# DropboxにこのフォルダをSync対象外にさせる設定
+# Next.jsのビルドキャッシュはDropboxで同期不要
+.next
+node_modules
