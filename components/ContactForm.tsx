@@ -48,12 +48,11 @@ export default function ContactForm({ lang }: { lang: string }) {
     try {
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
-        body: JSON.stringify({
+        body: new URLSearchParams({
           ...formData,
           _subject: `【お問い合わせ】${formData.subject} / ${formData.name}様`,
         }),
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
       })

@@ -66,12 +66,11 @@ export default function ReservationForm({ lang }: { lang: string }) {
     try {
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
-        body: JSON.stringify({
+        body: new URLSearchParams({
           ...formData,
           _subject: `【予約リクエスト】${formData.checkin} - ${formData.checkout} / ${formData.name}様`,
         }),
         headers: {
-          'Content-Type': 'application/json',
           Accept: 'application/json',
         },
       })
