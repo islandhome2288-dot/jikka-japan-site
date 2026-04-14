@@ -65,7 +65,7 @@ export default function RootLayout({
               '@type': 'LodgingBusiness',
               name: 'Jikka Japan（ジッカジャパン）',
               description: '大阪・泉佐野市の一棟貸し民泊。関西空港から約10分。最大7名。ファミリー歓迎。',
-              url: 'https://jikka-japan.com', // 【要変更】実際のURLに書き換えてください
+              url: process.env.NEXT_PUBLIC_SITE_URL || 'https://jikka-japan-site.vercel.app',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '高松北１丁目８−８２-13',
